@@ -1,0 +1,26 @@
+/*This CSS page is designed to create different stylings for different browser widths*/
+
+/*Styling if browser less than 480px*/
+@media (max-width: 480px) {
+    #header {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+/*Styling if browser less than 768px*/
+@media (max-width: 768px) {
+    #header {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) {
+     #navbar li {
+        float: left;
+        width: 135px;
+        height: 40px;
+        text-align: center;
+    }
+}
