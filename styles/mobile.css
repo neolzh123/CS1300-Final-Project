@@ -1,26 +1,13 @@
 /*This CSS page is designed to create different stylings for different browser widths*/
 
 /*Styling if browser less than 480px*/
-@media (max-width: 480px) {
-    #header {
-        height: 100%;
-        width: 100%;
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 0.6em;
     }
-}
 
-/*Styling if browser less than 768px*/
-@media (max-width: 768px) {
-    #header {
-        height: 100%;
-        width: 100%;
+    .social, #buttons {
+        display: none;
     }
-}
 
-@media (min-width: 769px) {
-     #navbar li {
-        float: left;
-        width: 150px;
-        height: 40px;
-        text-align: center;
-    }
 }
