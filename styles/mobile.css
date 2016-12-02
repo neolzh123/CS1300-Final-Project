@@ -19,7 +19,7 @@
 @media (min-width: 769px) {
      #navbar li {
         float: left;
-        width: 135px;
+        width: 150px;
         height: 40px;
         text-align: center;
     }

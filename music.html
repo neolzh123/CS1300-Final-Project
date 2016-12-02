@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles/mobile.css">
     <link rel="stylesheet" type="text/css" href="styles/site.css">
+    <link rel="stylesheet" type="text/css" href="styles/music.css">
+    <link rel="stylesheet" type="text/css" href="styles/image_gallery.css">
 </head>
 <!--The end of the header--> 
 <body>
@@ -43,8 +45,8 @@
     <div id="content">
         
         <div id="image_caption">
-            <h2>Apple Fest: Music</h2>
-            <p>Check out some of the awesome talent coming to Apple Fest this year </p>
+            <h2>Music</h2>
+            <p>Check out some of the awesome talent coming to Apple Fest this year below!</p>
         </div>
         
         <!--Spacer div establishes space between the image caption and the main text div-->
@@ -53,9 +55,79 @@
         <!--The about div is the main text div-->
         <div class="about">
             
-            <h2>Some of our most popular artists</h2>
+            <h2>This Year's Lineup is Better Than Ever!</h2>
             
-            <p><span class="bold">artist </span>info</p>
+            <p><span class="bold">Check below for an upcoming schedule, and previews of our performers:</span></p>
+            
+            <!--The box div is the beginning of image gallery div-->
+            <div class="box" id="box">
+
+                <div class="list" id="list">
+
+                	<!--Images in image gallery retrieved from 
+            		http://www.downtownithaca.com/ithaca-events/Apple%20Harvest%20Festival%20Presented%20by%20Tompkins%20Trust
+					https://theithacan.org/media/apples-to-apples-annual-apple-harvest-festival-brings-thousands-to-the-commons-2/
+					http://ambassadors.as.cornell.edu/category/uncategorized/
+					https://www.youtube.com/watch?v=wifT888ypuY-->
+                    <img id="apple_festival" src="images/music/music_eems.jpg" alt="Apple Harvest Festival"/>
+
+                </div>
+                <!--End of the list div-->
+
+                <div id="buttons">
+
+                    <span index="1" class="on"></span><!--First button is on as default-->
+
+                    <span index="2"></span>
+
+                    <span index="3"></span>
+
+                    <span index="4"></span>
+
+                    <span index="5"></span>
+
+                </div>
+                <!--End of the buttons div-->
+
+                <a id="prev_image" class="tab">&lt;</a>
+
+                <a id="next_image" class="tab">&gt;</a>
+
+            </div>
+            <!--End of the box div-->
+            
+            <table>
+                <tr>
+                    <th>Artist Name</th>
+                    <th>When Are They Performing?</th>
+                    <th>Where to Listen?</th>
+                </tr>
+                <tr>
+                    <td>Riley Owens</td>
+                    <td>Saturday, 1:00 - 1:45PM</td>
+                    <td>https://rileyowens.bandcamp.com/releases </td>
+                </tr>
+                <tr>
+                    <td>Sunny Weather</td>
+                    <td>Saturday, 2:00 - 2:45PM</td>
+                    <td>https://sunnyweather.bandcamp.com/</td>
+                </tr>
+                <tr>
+                    <td>Eems</td>
+                    <td>Saturday, 3:00 - 3:45PM</td>
+                    <td>https://eems.bandcamp.com/</td>
+                </tr>
+                <tr>
+                    <td>Alter</td>
+                    <td>Saturday, 4:00 - 4:45PM</td>
+                    <td>http://www.weamalter.com/#titles</td>
+                </tr>
+                <tr>
+                    <td>Wailin' Brass Band</td>
+                    <td>Saturday, 5:00 - 5:45PM</td>
+                    <td>https://www.facebook.com/WailinBrassBand/</td>
+                </tr>
+            </table>
         
         
         </div>

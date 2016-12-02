@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles/mobile.css">
     <link rel="stylesheet" type="text/css" href="styles/site.css">
+    <link rel="stylesheet" type="text/css" href="styles/image_gallery.css">
+    <link rel="stylesheet" type="text/css" href="styles/food.css">
 </head>
 <!--The end of the header--> 
      <div id="header">
@@ -41,7 +43,7 @@
     <div id="content">
         
         <div id="image_caption">
-            <h2>Apple Fest: Food</h2>
+            <h2>Delicacies Galore</h2>
             <p>Apples, Apples, and more Apples (plus some other yummy stuff too) </p>
         </div>
         
@@ -51,9 +53,46 @@
         <!--The about div is the main text div-->
         <div class="about">
             
-            <h2>Food Vendors</h2>
+            <h2>Crowd Favorites</h2>
             
-            <p><span class="bold"> vendor </span> food </p>
+            <p>From the classic <span class="bold">red delicious apples</span> to<span class="bold"> apple pizza</span>, we have your apple fix!</p>
+            
+            <!--The box div is the beginning of image gallery div-->
+            <div class="box" id="box">
+
+                <div class="list" id="list">
+
+                	<!--Images in image gallery retrieved from 
+            		http://www.downtownithaca.com/ithaca-events/Apple%20Harvest%20Festival%20Presented%20by%20Tompkins%20Trust
+					https://theithacan.org/media/apples-to-apples-annual-apple-harvest-festival-brings-thousands-to-the-commons-2/
+					http://ambassadors.as.cornell.edu/category/uncategorized/
+					https://www.youtube.com/watch?v=wifT888ypuY-->
+                    <img id="apple_festival" src="images/food/applepizza.jpg" alt="Apple Harvest Festival">
+
+                </div>
+                <!--End of the list div-->
+
+                <div id="buttons">
+
+                    <span index="1" class="on"></span><!--First button is on as default-->
+
+                    <span index="2"></span>
+
+                    <span index="3"></span>
+
+                    <span index="4"></span>
+
+                    <span index="5"></span>
+
+                </div>
+                <!--End of the buttons div-->
+
+                <a id="prev_image" class="tab">&lt;</a>
+
+                <a id="next_image" class="tab">&gt;</a>
+
+            </div>
+            <!--End of the box div-->
             
            
         

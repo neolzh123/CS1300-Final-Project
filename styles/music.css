@@ -1,0 +1,19 @@
+/*This CSS page is designed to style the music page*/
+
+#header {
+    height: 82vh;
+    width: 100%;
+    background-image: url('../images/music/music_wailin_at_applefest.jpg');
+    /*The above image came from https://www.facebook.com/WailinBrassBand/*/
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    }
+
+table, th, td {
+    border: 1px solid black;
+    padding: auto;
+    margin: auto;
+}
+
