@@ -8,9 +8,12 @@
 <head>
     <title>Ithaca Apple Harvest Festival</title>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="styles/mobile.css">
     <link rel="stylesheet" type="text/css" href="styles/site.css">
+    <link rel="stylesheet" type="text/css" href="styles/image_gallery.css">
 </head>
 <!--The end of the header--> 
     
@@ -22,11 +25,11 @@
         <!--Begins the navigation bar at the top of the page-->
         <div id = "navbar">
             <ul>
-                <li><a href="index.html">Home</a></li> <!--Remember to change these links!-->
-                <li><a href="food.html">Food</a></li>
-                <li><a href="gettingthere.html">Getting There</a></li>
-                <li><a href="music.html">Music</a></li>
-                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="google.com">Home</a></li> <!--Remember to change these links!-->
+                <li><a href="google.com">Food</a></li>
+                <li><a href="google.com">Transportation</a></li>
+                <li><a href="google.com">Music</a></li>
+                <li><a href="google.com">Attractions</a></li>
             </ul>
             
             <!--The images for the social media icons in the navigation bar-->
@@ -66,15 +69,50 @@
             <h2>About the Ithaca Apple Harvest Festival</h2>
         
             <p>Ithaca's premier fall festival, the Ithaca Apple Harvest Festival takes place each year in Ithaca Commons.</p>
-        
-        
+            
+            <!--The box div is the beginning of image gallery div-->
+            <div class="box" id="box">
+
+                <div class="list" id="list">
+
+                	<!--Images in image gallery retrieved from 
+            		http://www.downtownithaca.com/ithaca-events/Apple%20Harvest%20Festival%20Presented%20by%20Tompkins%20Trust
+					https://theithacan.org/media/apples-to-apples-annual-apple-harvest-festival-brings-thousands-to-the-commons-2/
+					http://ambassadors.as.cornell.edu/category/uncategorized/
+					https://www.youtube.com/watch?v=wifT888ypuY-->
+                    <img id="apple_festival" src="images/applefest_cover.jpg" alt="Apple Harvest Festival">
+
+                </div>
+                <!--End of the list div-->
+
+                <div id="buttons">
+
+                    <span index="1" class="on"></span><!--First button is on as default-->
+
+                    <span index="2"></span>
+
+                    <span index="3"></span>
+
+                    <span index="4"></span>
+
+                    <span index="5"></span>
+
+                </div>
+                <!--End of the buttons div-->
+
+                <a id="prev_image" class="tab">&lt;</a>
+
+                <a id="next_image" class="tab">&gt;</a>
+
+            </div>
+            <!--End of the box div-->
+
         </div>
         <!--End of the about div-->
 
     </div>
     <!--End of the content div-->
 
-
 </body>
-
+<script type="text/javascript"  src="js/image_gallery.js"></script>
 </html>
