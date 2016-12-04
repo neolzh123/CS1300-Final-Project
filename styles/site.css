@@ -43,7 +43,7 @@ p, ul, ol {
     height: 60px;
     position: fixed;
     opacity: 0.90;
-    z-index: 0;
+    z-index: 3;
 }
 
 #navbar ul{
