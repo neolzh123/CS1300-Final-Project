@@ -1,0 +1,10 @@
+#header {
+    height: 82vh;
+    width: 100%;
+    background-image: url('/images/apple_fest_students.jpg');
+    /*The above image came from https://www.facebook.com/WailinBrassBand/*/
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    }

@@ -32,7 +32,7 @@ p, ul, ol {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    }
+}
 
 /*Styles the opaque, red navbar at the top of the browser window, and makes it fixed*/
 #navbar {
@@ -46,23 +46,19 @@ p, ul, ol {
     z-index: 3;
 }
 
-#navbar ul{
-    display: inline-block;
-    margin: auto;
-}
-
-#navbar li{
+#navbar span{
     list-style: none;
+    margin-right: 1.5em;
 }
 
-#navbar ul a {
+#navbar span a {
     color: white;
     font-size: 110%;
     text-decoration: none;
     line-height: 55px;
 }
 
-#navbar ul a:hover {
+#navbar span a:hover {
     text-decoration: underline;
     font-weight: bold;
     font-size: 130%;
