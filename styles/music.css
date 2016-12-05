@@ -12,7 +12,7 @@
     }
 
 table{
-    width: 450px;
+    width: 500px;
     text-align: left;
     border: 1px solid black;
     margin: 0 auto;
@@ -25,6 +25,7 @@ th {
     font-weight: bold;
     font-size: 115%;
     font-family: Merriweather;
+    background-color: lemonchiffon;
 }
 
 td {
@@ -40,10 +41,16 @@ iframe {
     width: 560px;
     height: 315px;
     margin: auto;
-    z-index: -1;
     position: relative;
 }
 
 .performances{
     display: inline-block;
+}
+
+h3 {
+    text-align: center;
+    font-size: 140%;
+    font-weight: bold;
+    padding: 5px;
 }

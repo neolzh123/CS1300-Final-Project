@@ -44,6 +44,7 @@ p, ul, ol {
     position: fixed;
     opacity: 0.90;
     z-index: 3;
+    font-family: Merriweather;
 }
 
 #navbar span{
@@ -51,18 +52,19 @@ p, ul, ol {
     margin-right: 1.5em;
 }
 
-#navbar span a {
+#navbar a {
     color: white;
     font-size: 110%;
     text-decoration: none;
     line-height: 55px;
 }
 
-#navbar span a:hover {
+#navbar a:hover {
     text-decoration: underline;
     font-weight: bold;
     font-size: 130%;
 }
+
 
 
 /*Styles the social media icons that appear in the navbar*/

@@ -1,13 +1,14 @@
 /*Global variables defined before functions*/
 var index = 0;
-var gallery = ["https://www.youtube.com/embed/CftfIwFDr9w", "https://www.youtube.com/embed/GEHOe5PtL7s", "https://www.youtube.com/embed/7lBtJauMnyM", "https://www.youtube.com/embed/oQ0Ej0Rtc64", "https://www.youtube.com/embed/XPINYpOwcyY"];
-/*These videos were found from 
-    - https://www.youtube.com/watch?v=EtM0LNQ-pMo
-    - https://www.youtube.com/watch?v=CftfIwFDr9w 
-    - https://www.youtube.com/watch?v=GEHOe5PtL7s 
-    - https://www.youtube.com/watch?v=7lBtJauMnyM 
-    - https://www.youtube.com/watch?v=oQ0Ej0Rtc64*/
-var apple_festival = document.getElementById('music_video');
+var gallery = ["applepizza.jpg", "caramel_apples.jpg", "applepie.jpg", "applecider.jpg", "apples.jpg"];
+/*These images came from
+    - applepizza.jpg: http://cookdiary.net/wp-content/uploads/images/Apple_Pizza_5053.jpg
+    - caramel_apples.jpg: http://thefoodiepatootie.com/wp-content/uploads/2014/10/caramel-apples-recipe.jpg
+    - applepie.jpg: http://keeprecipes.com/sites/keeprecipes/files/24026_1360179318_0.jpg
+    - applecider.jpg: http://s3.amazonaws.com/etntmedia/media/images/ext/489087461/apple-cider.jpg
+    - apples.jpg: http://greatist.com/sites/default/files/styles/fb-1200x630/public/wp-content/uploads/2011/11/Apples.jpg?itok=u4daunae
+    */
+var apple_festival = document.getElementById('apple_festival');
 var buttons = document.getElementById("buttons").getElementsByTagName("span"); 
 
 /*Event handlers. Perform certain functions when onclick*/
@@ -31,10 +32,10 @@ function myNext(){
     if (index < gallery.length - 1) {
         buttons[index + 1].className = "on";
         index += 1;
-        apple_festival.src = gallery[index];
+        apple_festival.src = 'images/food/' + gallery[index];
     }else{
         index = 0;
-        apple_festival.src = gallery[index];
+        apple_festival.src = 'images/food/' + gallery[index];
         buttons[0].className = "on";
     }
 }
@@ -51,14 +52,15 @@ function myPrev(){
     if (index > 0) {
         buttons[index - 1].className = "on";
         index -= 1;
-        apple_festival.src = gallery[index];
+        apple_festival.src = 'images/food/' + gallery[index];
     }else{
         index = gallery.length - 1;
-        apple_festival.src = gallery[index];
+        apple_festival.src = 'images/food/' + gallery[index];
         buttons[gallery.length - 1].className = "on";
     }
 }
 
+/*Press different buttons to alter the image displayed*/
 function myButton(){
     var myIndex = parseInt(this.getAttribute('index'));
     index = myIndex - 1;
@@ -73,6 +75,6 @@ function myButton(){
             break;
         }
     }
-    apple_festival.src = gallery[index];
+    apple_festival.src = 'images/food/' + gallery[index];
     buttons[index].className = "on";
 }
