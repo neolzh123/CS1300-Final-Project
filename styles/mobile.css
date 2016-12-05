@@ -6,8 +6,21 @@
         font-size: 0.6em;
     }
 
+    #navbar span {
+        margin-right: 5em;
+    }
+
     .social, #buttons {
         display: none;
+    }
+
+    iframe {
+    	max-width: 100%;
+    	max-height: 200px;
+    }
+
+    table, th, td {
+    	max-width: 100%;
     }
 
 }
