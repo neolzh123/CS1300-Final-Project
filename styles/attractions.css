@@ -8,3 +8,9 @@
     background-position: center;
     background-size: cover;
     }
+
+.box{
+    align-content: center; 
+    width: 100vw; 
+    padding: 10px; 
+}
