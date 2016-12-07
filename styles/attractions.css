@@ -2,15 +2,20 @@
     height: 82vh;
     width: 100%;
     background-image: url('../images/attractions.jpg');
-    /*The above image came from https://www.facebook.com/WailinBrassBand/*/
+    /*The above image came from http://www.downtownithaca.com/local/image_files/large/533af7c1c2397.jpg*/
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    }
+}
 
 .box{
-    align-content: center; 
-    width: 100vw; 
-    padding: 10px; 
+    width: 100vw;  
+}
+
+.box > img {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    display: inline-block;
 }

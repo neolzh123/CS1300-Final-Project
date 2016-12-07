@@ -22,18 +22,6 @@ p, ul, ol {
     font-family: 'Merriweather', sans-serif;
 }
 
-/*Creates styling for the header to establish the hero image*/
-#header {
-    height: 82vh;
-    width: 100%;
-    background-image: url('../images/apple_fest_students.jpg');
-    /*The above image came from http://cornelluniversity.tumblr.com/post/130548730266/ithaca-apple-harvest-festival-photos-by-ksenia*/
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
 /*Styles the opaque, red navbar at the top of the browser window, and makes it fixed*/
 #navbar {
     float: left;
